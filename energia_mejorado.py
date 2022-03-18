@@ -52,7 +52,7 @@ def ciudad_plantas():
             print ('La ciudad que ingreso no cuenta con registros')
             break
 
-def recaudacion ():
+def dinero_re ():
     ciudades_region = informacion[region]
     total_consumo = 0
     
@@ -96,6 +96,9 @@ while op != 0:
             print('\n ¡REGRESANDO AL MENU PRINCIPAL! \n')
             break
         if region in informacion.keys():
-            recaudacion()
+            dinero_re()
             print('\n ¡REGRESANDO AL MENU PRINCIPAL! \n')
             break
+    while op == 0:
+        print('\n*** Programa Finalizado ***\n')
+        quit()
