@@ -1,2 +1,1 @@
-# Proyecto de consumo de energia 🌌
-# mejorado
+# 🌌 Proyecto de consumo de energia mejorado🌌
