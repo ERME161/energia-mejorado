@@ -37,15 +37,15 @@ def total_consumo_por_planta_ciudad(planta, ciudad):
     return total_consumo
 
 def ciudad_plantas():
-    for llaves in plantas:
-        if ciudad in llaves:
-            for llaves in consumo_energia['Coca Codo Sinclair']:
-                if llaves == ciudad:
+    for poblacion in plantas:
+        if ciudad in poblacion:
+            for poblacion in consumo_energia['Coca Codo Sinclair']:
+                if poblacion == ciudad:
                     total_coca = (sum(consumo_energia['Coca Codo Sinclair']['{}'.format(ciudad)]['consumos']))
                     print('Coca Codo Sinclair: ',total_coca, 'MWh')
                     continue
-            for llaves in consumo_energia['Sopladora']:
-                if llaves == ciudad:
+            for poblacion in consumo_energia['Sopladora']:
+                if poblacion == ciudad:
                     total_sopladora = (sum(consumo_energia['Sopladora']['{}'.format(ciudad)]['consumos']))        
                     print('Sopladora: ',total_sopladora, 'MWh')
         if ciudad not in plantas:
@@ -87,15 +87,15 @@ while op != 0:
     while op == 2:
         ciudad =  input('Ingrese el nombre de la ciudad: ')
         ciudad_plantas()
-        print('¡REGRESANDO AL MENU PRINCIPAL!')
+        print('\n ¡REGRESANDO AL MENU PRINCIPAL! \n')
         break
     while op == 3:
         region = input('Region: ')
         if region not in informacion.keys():
             print ('¡La region no existe!')
-            print('¡REGRESANDO AL MENU PRINCIPAL!')
+            print('\n ¡REGRESANDO AL MENU PRINCIPAL! \n')
             break
         if region in informacion.keys():
             recaudacion()
-            print('¡REGRESANDO AL MENU PRINCIPAL!')
+            print('\n ¡REGRESANDO AL MENU PRINCIPAL! \n')
             break
